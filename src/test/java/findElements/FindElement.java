@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.List;
 
-public class FindElementByID {
+public class FindElement {
     public static void main(String[] args) {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
@@ -73,7 +73,7 @@ public class FindElementByID {
 
         /*
         Relative Xpath
-        //tagName[@attribute = 'value']
+        //tagName[@attribute = 'value']     OR   //*[@attribute = 'value']
         $x("    //h1[@id='welcome']     ")
         $x("//h1")                         all h1
          */

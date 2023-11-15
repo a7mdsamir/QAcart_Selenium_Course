@@ -3,7 +3,7 @@ package basics;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-public class GetTitleSelenium {
+public class GetPageSourceWithSelenium {
     public static void main(String[] args) {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
@@ -12,7 +12,8 @@ public class GetTitleSelenium {
         driver.get("https://qacart.com/ar");
 
         driver.manage().window().maximize();
-        String title = driver.getTitle();
-        System.out.println("Title is " + title);
+
+        String pageSource = driver.getPageSource();
+        System.out.println("PageSource is " + pageSource);
     }
 }
